@@ -1,22 +1,46 @@
-
-21 lines (20 sloc) 1.16 KB
 <!DOCTYPE html>
 <html>
  <head>
    <title>Museum Guide</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
  </head>
  <body>
   <main>
     <h1> Martin Mobile Museum App</h1>
     <section id="gallery">
-      <h2></h2>
+      <h2>Gallery</h2>
       <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/the-nightwatch-rembrandt.jpg?w=977" alt="" class="artObject"></a>
-      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/the-milkmaid-rijksmuseum-amsterdam.jpg?w=977" alt="" class=""></a>
-      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/marten-en-oopjen.jpg?w=977" alt="" class=""></a>
-      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/the-threatened-swan-rijksmuseum.jpg?w=977" alt="" class=""></a>
-      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/wedding-portrait-isaac-abrahamsz-massa-and-beatrix-van-der-laan.jpg?w=977" alt="" class=""></a>
+      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/the-milkmaid-rijksmuseum-amsterdam.jpg?w=977" alt="" class="artObject"></a>
+      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/marten-en-oopjen.jpg?w=977" alt="artObject" class="artObject"></a>
+      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/the-threatened-swan-rijksmuseum.jpg?w=977" alt="" class="artObject"></a>
+      <a href="./pages/detail-page.html"><img src="https://www.iamsterdam.com/media/agenda/exhibitions-and-art-works/wedding-portrait-isaac-abrahamsz-massa-and-beatrix-van-der-laan.jpg?w=977" alt="" class="artObject"></a>
 
     </section>
+
+
+    <section id='comments'>
+        <h2>Comments</h2>
+    
+        <section class='comment'>
+          <h3>Arien said:</h3>
+          <p>"This is definitely one of my favorites!"</p>
+        </section>
+      </section>
+    
+      <form onsubmit="submitComment(); return false">
+        <div class="formSection">
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div class="formSection">
+          <label for="msg">Message:</label>
+          <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+          <button type="default">Post your comment</button>
+        </div>
+      </form>
   </main>
   <footer>Made with love at Codaisseur</footer>
  </body>
