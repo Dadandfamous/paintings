@@ -1,6 +1,6 @@
 body {
   background-color: #99ccff;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -14,20 +14,83 @@ main {
 }
 
 h1 {
-  margin: 3rem 1rem 6rem 1rem;
+  margin: 3rem 1rem 3rem 1rem;
 }
 
 #gallery {
-  display: flex;
+  display: inline;
+  flex-grow: 5;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  
-
 }
 
 .artObject {
-  max-width: 80%;
-  max-height: 20rem;
-  margin: 1rem;
+  max-width: 100%;
+  max-height: 200rem;
+  min-width: 300px;
+  /* margin: 1rem; */
+}
+
+/* test */
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.example {
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+  margin: auto;
+}
+
+header, footer {
+  width: 100%;
+  /* padding: 1em; */
+  text-align: center;
+  font-size: 2rem;
+  background-color: #99ccff;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  font-size: 2rem;
+  border: none;
+}
+
+nav, aside {
+  padding: 0 1em 0 1em;
+  font-size: 50%;
+  text-align: left;
+}
+
+nav {
+  background-color: #99ccff;
+}
+
+aside {
+  background-color: #99ccff;
+}
+
+.content {
+  background-color: #99ccff;
+  /* padding: 1em; */
+  max-width: 300rem;
+}
+
+footer {
+  align-self: flex-end;
 }
