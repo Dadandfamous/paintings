@@ -5,7 +5,7 @@ function submitComment () {
   let textArea = document.getElementById('msg')
   let msg = textArea.value
   let comment = document.createElement('section')
-  // let h3 = document.createElement('<h3>')
-  // console.log(msg)
-  // console.log(h3)
+  let h3 = document.createElement('<h3>')
+  console.log(msg)
+  console.log(h3)
 }
