@@ -1,4 +1,4 @@
-body {
+body { 
   background-color: #99ccff;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -22,8 +22,6 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  
-
 }
 
 .artObject {
